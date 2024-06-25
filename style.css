@@ -51,15 +51,26 @@ main {
     display: inline-block;
     width: 15%;
     margin: 10px 0;
-    padding: 7px;
+    padding: 10px 20px; /* Aumenta o padding para tornar os botões maiores */
     background-color: transparent;
     border: 4px solid white;
     border-radius: 20px;
     color: white;
     text-decoration: none;
-    font-size: 1em;
-    font-weight: normal;
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+    font-weight: normal; /* Garantir que o texto não esteja em negrito */
+    transition: all 0.3s ease; /* Adicionar transição suave */
+    box-shadow: 0 25px 20px rgba(0, 0, 0, 0.2); /* Aumentar a sombra */
 }
+
+.btn:hover {
+    background-color: white; /* Mudar o fundo ao passar o mouse */
+    color: #e3a437; /* Mudar a cor do texto ao passar o mouse */
+    border-color: #e3a437; /* Mudar a cor da borda ao passar o mouse */
+    box-shadow: 0 25px 24px rgba(0, 0, 0, 0.3); /* Aumentar ainda mais a sombra ao passar o mouse */
+    transform: translateY(-2px); /* Mover o botão ligeiramente para cima ao passar o mouse */
+}
+
 
 footer {
     background-color: #f0f0f0;
