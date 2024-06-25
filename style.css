@@ -47,7 +47,7 @@ main {
 }
 
 .btn {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: inline-block;
     width: 15%;
     margin: 10px 0;
@@ -58,6 +58,7 @@ main {
     color: white;
     text-decoration: none;
     font-size: 1em;
+    font-weight: normal;
 }
 
 footer {
