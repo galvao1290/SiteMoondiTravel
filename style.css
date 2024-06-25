@@ -117,6 +117,7 @@ footer {
 
 #text-rodape {
     color: #d29c30;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 600px) {
