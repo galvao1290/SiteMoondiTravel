@@ -11,6 +11,7 @@ html, body {
     text-align: center;
 }
 
+
 .content-wrapper {
     background-color: transparent;
     width: 100%;
@@ -20,6 +21,7 @@ html, body {
     flex-direction: column;
 }
 
+
 header {
     background-color: #0c0d31;
     padding: 7px 0;
@@ -28,48 +30,90 @@ header {
     justify-content: center;
 }
 
+
 .logo {
     max-width: 17%;
     height: auto;
 }
 
-main {
-
+@keyframes changeBackground {
+    
+    0% {
+      opacity: 1;
+      background-image: url('beautiful-village-hallstatt-salzkammergut-region-austria.jpg');
+    }
+    14.28% {
+      opacity: 1;
+      background-image: url('big-ben-westminster-bridge-sunset-london-uk.jpg');
+    }
+    28.56% {
+      opacity: 1;
+      background-image: url('central-park-manhattan-new-york-huge-beautiful-park-surrounded-by-skyscraper-with-pond.jpg');
+    }
+    42.84% {
+      opacity: 1;
+      background-image: url('horizontal-view-famous-arc-de-triomphe-paris-france.jpg');
+    }
+    57.12% {
+      opacity: 1;
+      background-image: url('msc2.jpg');
+    }
+    71.40% {
+      opacity: 1;
+      background-image: url('Piscinas\ Naturais\ de\ Maragogi.jpg');
+    }
+    90% {
+      opacity: 1;
+      background-image: url('shutterstock_717776278.jpg');
+    }
+    100%{
+        opacity: 1;
+        background-image: url(beautiful-village-hallstatt-salzkammergut-region-austria.jpg);
+    }
+    
+  }
+  
+  main {
     flex-grow: 1;
-    background: url(big-ben-westminster-bridge-sunset-london-uk.jpg) no-repeat center center;
+    background: no-repeat center center;
     background-size: cover;
     padding: 20px 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centraliza os botões verticalmente */
-}
+    justify-content: center; 
+    animation: changeBackground 40s infinite; 
+  }
+
 
 .btn {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: inline-block;
     width: 15%;
     margin: 10px 0;
-    padding: 10px 20px; /* Aumenta o padding para tornar os botões maiores */
+    padding: 10px 20px; 
     background-color: transparent;
     border: 4px solid white;
     border-radius: 20px;
     color: white;
     text-decoration: none;
-    font-size: 1.2em; /* Aumenta o tamanho da fonte */
-    font-weight: normal; /* Garantir que o texto não esteja em negrito */
-    transition: all 0.3s ease; /* Adicionar transição suave */
-    box-shadow: 0 25px 20px rgba(0, 0, 0, 0.2); /* Aumentar a sombra */
+    font-size: 1.2em; 
+    font-weight: normal; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 25px 20px rgba(0, 0, 0, 0.2); 
 }
 
+
 .btn:hover {
-    background-color: white; /* Mudar o fundo ao passar o mouse */
-    color: #e3a437; /* Mudar a cor do texto ao passar o mouse */
-    border-color: #e3a437; /* Mudar a cor da borda ao passar o mouse */
-    box-shadow: 0 25px 24px rgba(0, 0, 0, 0.3); /* Aumentar ainda mais a sombra ao passar o mouse */
-    transform: translateY(-2px); /* Mover o botão ligeiramente para cima ao passar o mouse */
+    background-color: white; 
+    color: #e3a437;
+    border-color: #e3a437; 
+    box-shadow: 0 25px 24px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-2px); 
 }
+
+
 
 
 footer {
@@ -81,6 +125,7 @@ footer {
     justify-content: center;
 }
 
+
 .footer-content {
     display: flex;
     justify-content: space-around;
@@ -91,6 +136,7 @@ footer {
     flex-wrap: nowrap;
 }
 
+
 .footer-content p {
     margin: 10px 0;
     font-size: 0.9em;
@@ -100,10 +146,12 @@ footer {
     white-space: nowrap;
 }
 
+
 .footer-content img {
     vertical-align: middle;
     margin-right: 10px;
 }
+
 
 .instagram {
     max-width: 25px;
@@ -112,12 +160,14 @@ footer {
     height: auto;
 }
 
+
 .clock {
     max-width: 20px;
     max-height: 20px;
     width: auto;
     height: auto;
 }
+
 
 .email {
     max-width: 20px;
@@ -126,52 +176,65 @@ footer {
     height: auto;
 }
 
+
 #text-rodape {
     color: #d29c30;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+
+
+
 
 @media (max-width: 600px) {
     .content-wrapper {
         width: 100%;
     }
 
+
     .btn {
         width: 47%;
         font-size: 0.9em;
     }
 
+
     header h1 {
         font-size: 1.5em;
     }
 
+
     header p {
         font-size: 0.9em;
     }
+
 
     .footer-content {
         flex-wrap: wrap;
         justify-content: center;
     }
 
+
     .footer-content p {
-        margin: 2px 0; 
+        margin: 2px 0;
         font-size: 1em;
-        padding: 1px 0; 
+        padding: 1px 0;
+
 
     }
+
 
     .footer-content img {
-        margin-right: 10px; 
-        margin-bottom: 0; 
+        margin-right: 10px;
+        margin-bottom: 0;
     }
     header {
-        padding: 8px 0; 
+        padding: 8px 0;
     }
 
+
     .logo {
-        max-width: 70%; 
+        max-width: 70%;
     }
    
 }
-
